@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.nv {
+    background-image: url(https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png);
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nv nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 10px 20px;
+}
+
+.nav .menu-item {
+    display: none;
+}
+
+.nav .menu-item.show {
+    display: flex;
+}
+
+.nv .right {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav p {
+    margin-inline: 11px;
+    margin-top: 22px;
+    font-size: x-large;
+}
+
+.nv .logo {
+    text-align: center;
+}
+
+.nv .logo img {
+    width: 15%;
+    margin-top: 66px;
+}
+
+.nv .inp {
+    text-align: center;
+}
+
+.nv .text {
+    text-align: center;
+    color: white;
+    margin-top: 22px;
+    font-size: 11px;
+}
+
+.nv .inp input {
+    width: 80%;
+    max-width: 600px;
+    height: 30px;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin-top: 22px;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card .crd img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+.crd {
+    margin: 10px;
+    flex: 1 1 300px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.coll .txt {
+    text-align: center;
+    margin-top: 44px;
+    padding: 33px;
+}
+
+.coll .rest {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.rest img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 7px;
+    margin: 10px;
+}
+
+@media (max-width: 768px) {
+    .nv nav .right {
+        display: none;
+    }
+    
+    .nv nav .right.menu-item.show {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav p.menu-item {
+        display: none;
+    }
+    
+    nav p.menu-item.show {
+        display: block;
+    }
+    
+    .nv .logo img {
+        width: 50%;
+    }
+    
+    .nv .text h1 {
+        font-size: 18px;
+    }
+}
